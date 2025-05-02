@@ -1,7 +1,14 @@
 #include "Starlinks.hpp"
 
 
-Starlinks::Starlinks(/* args */){}
-Starlinks::Starlinks(const string& token){}
+Starlinks::Starlinks()
+{
+    token = new Token();
+}
+
+Starlinks::Starlinks(const string& t)
+{
+    token = new Token(t);
+}
 
 Starlinks::~Starlinks(){}

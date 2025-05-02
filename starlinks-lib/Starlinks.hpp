@@ -18,12 +18,12 @@ class Starlinks
 {
     private:
         /* data */
-        Token token;
+        Token *token;
         
 
     public:
         Starlinks();
-        Starlinks(const string& token);
+        Starlinks(const string& t);
         ~Starlinks();
 
         Link* create_link();
@@ -32,7 +32,7 @@ class Starlinks
         bool delete_link();
         bool delete_shorcut();
 
-        string get_token() { return token.token; }
+        string get_token() { return token->token; }
         
         vector<Domain> get_domains();
 
