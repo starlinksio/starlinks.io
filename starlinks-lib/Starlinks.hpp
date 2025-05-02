@@ -10,6 +10,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <string>
+
+using namespace std;
 
 class Starlinks
 {
@@ -19,7 +22,8 @@ class Starlinks
         
 
     public:
-        Starlinks(/* args */);
+        Starlinks();
+        Starlinks(const string& token);
         ~Starlinks();
 
         Link* create_link();
@@ -40,13 +44,7 @@ class Starlinks
 
 };
 
-Starlinks::Starlinks(/* args */)
-{
-}
 
-Starlinks::~Starlinks()
-{
-}
 
 
 
