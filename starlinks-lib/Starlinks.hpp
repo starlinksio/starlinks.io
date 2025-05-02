@@ -7,6 +7,8 @@
 #include "entities/Click.hpp"
 #include "entities/Domain.hpp"
 
+#include "network/netDomain.hpp"
+
 #include <iostream>
 #include <string>
 #include <vector>
