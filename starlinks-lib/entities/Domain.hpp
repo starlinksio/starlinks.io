@@ -14,9 +14,9 @@ struct Domain
     Domain(json value)
     {
         domain = value["domain"];
-        isDefault = value["isDefault"];
+        isDefault = value["default"];
     }
 
-    string to_string() const {return "Domain(domain=" + domain + "isDefault=" + ( isDefault ? "true" : "false") + ")"; }
+    string to_string() const {return "Domain(domain=" + domain + " ,isDefault=" + ( isDefault ? "true" : "false") + ")"; }
 
 };

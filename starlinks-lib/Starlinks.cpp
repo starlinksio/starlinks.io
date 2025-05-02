@@ -20,11 +20,12 @@ vector<Domain> Starlinks::get_domains()
 
     json result = getDomainRequest();
 
-    cout << result.dump(4) << endl;
 
     if (result.is_array()) {
         for (const auto& item : result) {
-            domains.emplace_back(Domain(item));
+            if (!item.empty() && item.contains("domain")) {
+                domains.emplace_back(Domain(item));
+            }
         }
     }
 

@@ -42,7 +42,5 @@ json getJsonFromUrl(const std::string& url) {
         curl_easy_cleanup(curl);
     }
 
-    cout << "1." << responseStr << endl;
-
     return result;
 }
