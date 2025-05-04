@@ -6,7 +6,7 @@
 using json = nlohmann::json;
 using namespace std;
 
-const string url_api = "localhost:8080";
+extern const std::string url_api;
 
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* output);
 json getJsonFromUrl(const std::string& url);

@@ -1,6 +1,10 @@
 
+
 #include <iostream>
 #include <string>
+
+#include "../network/netToken.hpp"
+
 
 using namespace std;
 
@@ -8,7 +12,7 @@ struct Token
 {
     Token()
     {
-
+        generateToken();
     }
     
     Token(const string& token): token(token)
@@ -17,5 +21,8 @@ struct Token
     }
     /* data */
     string token;
+
+    private:
+        void generateToken();
 
 };
