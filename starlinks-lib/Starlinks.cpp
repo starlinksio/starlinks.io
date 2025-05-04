@@ -31,3 +31,12 @@ vector<Domain> Starlinks::get_domains()
 
     return domains;
 }
+
+
+vector<Link> Starlinks::get_links()
+{
+    vector<Link> links;
+    token->getHistory();
+
+    return links;
+}

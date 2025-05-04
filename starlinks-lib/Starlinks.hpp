@@ -1,20 +1,8 @@
 #ifndef STARLINKS_HPP
 #define STARLINKS_HPP
 
-#include "entities/Token.hpp"
-#include "entities/Link.hpp"
-#include "entities/Shortcut.hpp"
-#include "entities/Click.hpp"
-#include "entities/Domain.hpp"
+#include "entities/entity.hpp"
 
-#include "network/netDomain.hpp"
-
-#include <iostream>
-#include <string>
-#include <vector>
-#include <string>
-
-using namespace std;
 
 class Starlinks
 {

@@ -1,12 +1,10 @@
+#ifndef TOKEN_HPP
+#define TOKEN_HPP
+
+#include "entity.hpp"
 
 
-#include <iostream>
-#include <string>
-
-#include "../network/netToken.hpp"
-
-
-using namespace std;
+struct Link;
 
 struct Token
 {
@@ -23,6 +21,14 @@ struct Token
     string token;
 
     private:
+        vector<Link> links;
+
         void generateToken();
 
+    public:
+        void getHistory();
+
 };
+
+
+#endif
