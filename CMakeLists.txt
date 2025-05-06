@@ -28,8 +28,12 @@ add_executable(api
     starlinks-lib/network/Requests.cpp
     starlinks-lib/network/netToken.cpp
     starlinks-lib/network/netDomain.cpp
+    starlinks-lib/network/netLink.cpp
+    starlinks-lib/network/netShortcut.cpp
+    starlinks-lib/network/netClick.cpp
 )
 
-target_link_libraries(api
+target_link_libraries(
+    api
     curl
 )
