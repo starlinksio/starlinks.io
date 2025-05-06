@@ -3,5 +3,10 @@
 
 json generateTokenRequest()
 {
-    return getJsonFromUrl(url_api + "/generateToken"); 
+    return getRequest(url_api + "/generateToken"); 
+}
+
+json getTokenHistoryRequest(const string  &token)
+{
+    return getRequest(url_api + "/details?token=" + token); 
 }

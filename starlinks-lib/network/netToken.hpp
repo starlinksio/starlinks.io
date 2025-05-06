@@ -4,5 +4,6 @@
 #include "Requests.hpp"
 
 json generateTokenRequest();
-json getHistoryRequest(const string  &token);
+json getTokenHistoryRequest(const string  &token);
+
 #endif

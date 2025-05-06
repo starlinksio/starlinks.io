@@ -3,5 +3,5 @@
 
 json getDomainRequest()
 {
-    return getJsonFromUrl(url_api + "/getDomains");
+    return getRequest(url_api + "/getDomains");
 }

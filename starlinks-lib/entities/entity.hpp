@@ -16,7 +16,8 @@ using namespace std;
 
 #include "../network/netToken.hpp"
 #include "../network/netDomain.hpp"
-
-
+#include "../network/netLink.hpp"
+#include "../network/netShortcut.hpp"
+#include "../network/netClick.hpp"
 
 #endif

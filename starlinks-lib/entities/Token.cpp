@@ -15,8 +15,7 @@ void Token::generateToken()
 
 void Token::getHistory()
 {
-    json result = getHistoryRequest(token);
-
+    json result = getTokenHistoryRequest(token);
 
     if (result.is_array()) {
         for (const auto& item : result) {

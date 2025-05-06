@@ -28,6 +28,9 @@ struct Token
     public:
         void getHistory();
 
+        vector<Link> get_links(){ return links; }
+
+
 };
 
 
