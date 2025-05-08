@@ -16,8 +16,8 @@ class Starlinks
         Starlinks(const string& t);
         ~Starlinks();
 
-        Link* create_link();
-        Shortcut* add_shortcut();
+        Link* create_link(const string& url, const string& shortcut);
+        Link* create_link(const string& url, const string& domain, const string& shortcut);
 
         bool delete_link(const string& id);
         bool delete_shorcut(const string& id);
@@ -29,9 +29,6 @@ class Starlinks
         vector<Link> get_links();
         vector<Shortcut> get_shortcuts(Link *link);
         vector<Shortcut> get_shortcuts(const string& link_id);
-        vector<Click> get_clicks();
-
-
 
 };
 

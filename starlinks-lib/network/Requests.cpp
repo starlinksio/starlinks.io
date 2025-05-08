@@ -6,7 +6,7 @@
 
 using json = nlohmann::json;
 
-const std::string url_api = "localhost:8080";
+const std::string url_api = "https://api.starlinks.io";
 
 // Callback function for CURL to write data into a string
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* output) {

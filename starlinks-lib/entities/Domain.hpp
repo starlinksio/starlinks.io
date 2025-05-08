@@ -13,8 +13,8 @@ struct Domain
 
     Domain(json value)
     {
-        domain = value["domain"];
-        isDefault = value["default"];
+        domain = value["domain"].get<string>();
+        isDefault = value["default"].get<bool>();
     }
 
     string to_string() const {return "Domain(domain=" + domain + " ,isDefault=" + ( isDefault ? "true" : "false") + ")"; }

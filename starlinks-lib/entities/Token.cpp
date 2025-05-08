@@ -5,10 +5,12 @@ void Token::generateToken()
 {
     json result = generateTokenRequest();
 
-    if(result.contains("token")){
+    if (result.contains("token")) {
         token = result["token"];
-    }else if(result.contains("message")){
-        std::cout << result["message"] << endl;
+    } else if (result.contains("message")) {
+        throw std::runtime_error(result["message"]);
+    } else {
+        throw std::runtime_error("Unknown error occurred during token generation.");
     }
 }
 
@@ -20,7 +22,7 @@ void Token::getHistory()
     if (result.is_array()) {
         for (const auto& item : result) {
             if (!item.empty() && item.contains("type") && item["type"] == "Link") {
-                links.emplace_back(Link(item["id"],item["createAt"]));
+                links.emplace_back(Link(token,item));
             }
         }
     }

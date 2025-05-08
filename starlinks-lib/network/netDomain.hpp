@@ -5,4 +5,6 @@
 
 json getDomainRequest();
 
+string getDefaultDomain();
+
 #endif
