@@ -4,16 +4,11 @@
 
 ## Features
 
-- Create short URLs programmatically
+- Create & Edit short URLs programmatically
 - Resolve short URLs to their original destinations
 - Track link analytics and performance
 
 ## Getting Started
-
-### Prerequisites
-
-- C++17 or higher
-- CMake 3.10+
 
 ### Installation
 
