@@ -42,7 +42,7 @@ struct Link
     public:
 
         void edit_link(const string& new_url);
-        void add_shortcut(const string& domain, const string& shortcut);
+        bool add_shortcut(const string& domain, const string& shortcut);
 
 
         string get_last_click();

@@ -52,12 +52,13 @@ void Link::edit_link(const string& new_url)
     cout << result.dump(4) << endl;
 }
 
-void Link::add_shortcut(const string& domain, const string& shortcut)
+bool Link::add_shortcut(const string& domain, const string& shortcut)
 {
     json result = addShrotcut(token, id, domain, shortcut);
 
     cout << result.dump(4) << endl;
 
+    return result.contains("status") && result["status"] == "success";
 }
 
 vector<Click> Link::get_clicks(int offset)
