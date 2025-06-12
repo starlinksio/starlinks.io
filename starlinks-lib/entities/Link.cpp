@@ -56,7 +56,7 @@ bool Link::add_shortcut(const string& domain, const string& shortcut)
 {
     json result = addShrotcut(token, id, domain, shortcut);
 
-    cout << result.dump(4) << endl;
+    //cout << result.dump(4) << endl;
 
     return result.contains("status") && result["status"] == "success";
 }
